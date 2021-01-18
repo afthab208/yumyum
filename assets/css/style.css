@@ -18,7 +18,7 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: OpenSansRegular;
-    background: var(--dark-grey);
+    background: url("https://www.emmadiscord.ml/bg.jpg")
     color: var(--light);
 }
 
