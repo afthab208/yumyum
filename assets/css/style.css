@@ -1,0 +1,428 @@
+@font-face { font-family: OpenSansLight; src: url(../fonts/OpenSans-Light.ttf); }
+@font-face { font-family: OpenSansRegular; src: url(../fonts/OpenSans-Regular.ttf); }
+@font-face { font-family: OpenSansSemiBold; src: url(../fonts/OpenSans-SemiBold.ttf); }
+
+@font-face { font-family: UniSansHeavy; src: url(../fonts/uni-sans.heavy-caps.otf); }
+@font-face { font-family: UniSansLight; src: url(../fonts/uni-sans.thin-caps.otf); }
+
+:root {
+    --primary: #7289DA;
+    --dark: #23272A;
+    --light: #FFFFFF;
+    --grey: #99AAB5;
+    --dark-grey: #2C2F33;
+    --dsh: #F59E12;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: OpenSansRegular;
+    background: var(--dark-grey);
+    color: var(--light);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+i {
+    padding-right: 5px;
+}
+
+nav {
+    background: var(--dark);
+    height: 85px;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main {
+    margin-top: 85px;
+}
+
+.logo {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 10%;
+    transition: .5s ease-in-out;
+}
+
+.logo:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+.logo img {
+    height: 35px;
+    margin: 20px;
+    animation: float-without-shadow 3s ease-in-out infinite;
+}
+
+.logo p {
+    font-family: UniSansHeavy;
+    color: var(--primary);
+    font-size: 30px;
+}
+
+.bar {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.bar a {
+    color: var(--light);
+    text-decoration: none;
+    font-family: OpenSansLight;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    filter: brightness(90%);
+    padding-left: 20px;
+    letter-spacing: .75px;
+    transition: .3s ease-in-out;
+}
+
+.bar a:hover {
+    cursor: pointer;
+    color: var(--primary);
+    filter: brightness(110%);
+}
+
+.site-dark {
+    background: var(--dark-grey);
+    color: var(--white);
+}
+
+.site-light {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.hey {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10%;
+}
+
+.groovy {    
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+    width: 100%;
+}
+
+.buttons {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.btn {
+    transition: .25s ease-in-out;
+    background: grey;
+    padding: 17.5px;
+    width: 210px;
+    text-align: center;
+    margin: 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    animation: float 3s ease-in-out infinite;
+}
+
+.btn:hover {
+    filter: brightness(110%);
+    background: transparent;
+}
+
+.invite {
+    background: var(--primary);
+    color: var(--light);
+    border: 1.5px var(--primary) solid;
+}
+
+.support {
+    background: var(--light);
+    color: var(--dark);
+    border: 2px var(--light) solid;
+}
+
+.invite:hover {
+    color: var(--primary);
+}
+
+.support:hover {
+    color: var(--light);
+}
+
+.hey img {
+    height: 150px;
+    padding-bottom: 75px;
+}
+
+.hey p {
+    color: var(--light);
+    font-family: UniSansHeavy;
+    font-size: 75px;
+    text-shadow: 3.5px 3.5px var(--dark);
+}
+
+.hey p span {    
+    font-family: UniSansLight;
+}
+
+.commands {
+    padding: 10%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.commands p {
+    padding: 25px;
+    font-size: 35px;
+    color: var(--light);
+    animation: float-without-shadow 3s ease-in-out infinite;
+    font-family: UniSansHeavy;
+}
+
+.commands p .thin {
+    font-family: UniSansLight;
+}
+
+.commands table {
+    width: 60%;
+}
+
+.commands td, th {
+    padding: 12.5px;
+    color: var(--light);
+    font-size: 17.5px;
+    border-top: 1px solid var(--light);
+    font-family: OpenSansLight;
+}
+
+.command-name {
+    font-family: OpenSansRegular !important;
+}
+
+.donate {
+    padding: 10%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.donate img {
+    height: 200px;
+    padding-bottom: 75px;
+    animation: float-without-shadow 3s ease-in-out infinite;
+}
+
+.donate p {
+    color: var(--light);
+    font-size: 25px;
+}
+
+.donate a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.sponsor {
+    padding: 10%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sponsor p {
+    color: var(--light);
+    font-size: 25px;
+}
+
+.sponsor a {
+    color: var(--dsh);
+    transition: .25s ease-in-out;
+}
+
+.sponsor a:hover {
+    filter: brightness(110%);
+}
+
+.sponsor img {
+    padding: 25px 25px 50px 25px;
+    animation: float-without-shadow 3s ease-in-out infinite;
+}
+
+footer {
+    background: var(--dark);
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer p {
+    font-size: 13.5px;
+    letter-spacing: .5px;
+    color: var(--light);
+    font-family: OpenSansLight;
+}
+
+footer a {
+    color: var(--light);
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+footer a:hover {
+    color: var(--primary);
+}
+
+@keyframes float {
+	0% {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		transform: translatey(0px);
+	}
+	50% {
+        box-shadow: 0 9px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		transform: translatey(-5px);
+	}
+	100% {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float-without-shadow {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-5px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes hover {
+	0% {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		transform: translatey(0px);
+	}
+	100% {
+        box-shadow: 0 11.5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		transform: translatey(-7.5px);
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        margin: 0;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .bar {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bar a {
+        padding-bottom: 5px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    .bar i {
+        display: none;
+    }
+
+    .hey p {
+        font-size: 50px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        margin: 0;
+        margin-top: 100px;
+    }
+    
+    .commands {
+        padding: 0;
+    }
+
+    .commands table {
+        width: 90%;
+    }
+
+    .commands td, th {
+        padding: 5px;
+    }
+
+    .donate p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .sponsor p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .sponsor img {
+        width: 200px;
+        height: auto;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hey p {
+        font-size: 35px;
+    }
+}
